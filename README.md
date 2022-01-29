@@ -1,9 +1,10 @@
-## flowcharthtml (javascript puro)
+## flowcharthtml (pure javascript)
 
-Adiciona a tag <rc-flowchart />
+Add a tag `<rc-flowchart />`
 
   [demo](https://ricardobraganca.github.io/flowcharthtml/)
 
+~~~html
     <rc-flowchart name="flowchart">
 
         <flow-box class="box" left="500" top="20" id='1' targets="2;3;4">START</flow-box>
@@ -16,5 +17,11 @@ Adiciona a tag <rc-flowchart />
         <flow-box class="box" id='6' targets="">TASK 5</flow-box>
         <flow-box class="box" id='7' targets="">TASK 6</flow-box>
     </rc-flowchart>
+~~~
     
-    ![prev](https://ricardobraganca.github.io/flowcharthtml/img/prev.png)
+   ![prev](https://ricardobraganca.github.io/flowcharthtml/img/prev.png)
+
+* Double click to select a element.
+* Double click in another element will trace a arrow.
+* Repeat process to remove arrow.
+* Right click to context menu (Remove or Add Element).
