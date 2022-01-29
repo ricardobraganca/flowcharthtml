@@ -1,0 +1,86 @@
+.box{
+
+    width: 100px;
+    min-height: 50px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 12px 0px;
+    background-color: white;
+}
+
+.box:hover{
+
+    cursor: all-scroll;
+    background-color: #c3f3ee;
+}
+
+.flow-box-line {
+
+    background-color: black;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 1px;
+}
+
+.flow-box-line:hover{
+
+    box-shadow: 0 0 9px 0px cyan;
+}
+
+.flow-box-line::after {
+
+    content: "";
+    height: 11px;
+    width: 11px;
+    top: -31px;
+    border-width: 0px 0px 4px 4px;
+    border-color: black;
+    border-style: solid;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, -1, 26);
+    position: absolute;
+}
+
+.selected {
+
+    border-style: dotted;
+}
+
+.toolbar {
+
+    width: 150px;
+    border: none;
+    padding: 5px;
+    background-color: #bcfbde;
+    border-radius: 15px;
+    z-index: 1000;
+    box-shadow: 0 0 12px 0px;
+}
+
+.toolbar > flow-box{
+
+    margin: 3px auto;
+}
+
+.button-remove {
+
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: indianred;
+}
+
+body {
+
+    top: 0;
+    margin: 0;
+    padding: 0;
+    
+    width: 200%;
+    height: 200vh;
+   
+    background: white;
+    background-image: linear-gradient(rgba(0, 255, 0, .7) .1em, transparent .1em), linear-gradient(90deg, rgba(0, 255, 0, .7) .1em, transparent .1em);
+    background-size: 3em 3em;
+}
